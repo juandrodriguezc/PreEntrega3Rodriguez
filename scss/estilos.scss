@@ -1,0 +1,244 @@
+//variables//
+$color-primario:  #CB3C3C;
+$color-secundario: white;
+$color-terciario: #000000;
+$font-titulos:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$font-secundario:  Arial, Helvetica, sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    background-color:  #ffffff;
+
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: none;
+    transition: 0.25s ease;
+}
+
+ul{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    list-style: none;
+}
+
+ul:hover a:hover {
+    color: $color-primario;
+    box-shadow: 0 2px 0 0 currentColor;
+}
+
+.text {
+    color:rgb(15, 15, 15);
+    width: 100%;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.boton {
+    color: $color-primario;
+    background-color: rgb(1, 1, 1);
+}
+
+form {
+    background-color: navy;
+    width: 100%;
+    height: 100vh;
+    color: black;
+    padding: 30px;
+}
+form input {
+    width: 100%;
+}
+
+form textarea { 
+    width: 100%;
+}
+
+#barra-navegacion {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content:space-around;
+}
+
+#barra-navegacion a{ 
+    width: 100%;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    padding:20px;
+
+}
+
+#logo {
+    width:50%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+}
+
+.text {
+    width: 100%;
+}
+.social-link {
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color:$color-primario;
+}
+.social-link a {
+    background-color:$color-primario;
+    color: #131212;
+}
+
+h1{
+    margin:20px 0 20px 0;
+    padding: auto;
+    color:$color-primario;
+    background-color: $color-secundario;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: $font-titulos;
+    font-size: 50px;
+}
+
+.barra-carrusel{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.barra-carrusel p{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: none;
+    transition: 0.25s ease;
+    font-size: 25px;
+    font-family: $font-secundario;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img1 {
+    width: 255px;
+    height: 461px;
+}
+.img2 {
+    width: 255px;
+    height: 461px;
+}
+.img3 {
+    width: 255px;
+    height: 461px;
+}
+
+
+.texts{
+width: 255px;
+height: 461px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: $font-titulos;
+font-size: 50px;
+}
+:is(header, footer, .text) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $color-primario;
+    color:black;
+    font-size: 30px;
+    font-family: $font-titulos;
+
+}
+@media (max-width: 400px) {
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+}
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-secundario;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.promo {
+    font-family: fantasy;
+    font-size: 128px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: $color-primario;
+}
+
+.img4{
+    width: 555px;
+    height: 248px;
+}
+.textt{
+    margin: 10px;
+    padding: 10px;
+    font-family: $font-secundario;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+ul{
+    li{
+        color: $color-terciario ;
+        &:hover{
+            color: $color-primario;
+        p{
+            color: $color-secundario;
+            border: 10px solid $color-primario;
+            border-radius: 20px 20px 20px 20px;
+            background-color: $color-primario;
+        }
+    }
+}
+}
+
+h3{
+    width: 100%;
+    background-color: $color-secundario;
+    color: $color-terciario;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: $font-secundario;
+}
+h2 {
+    width: 100%;
+    color:$color-terciario;
+    background-color: #f3dbdb;
+    display: grid;
+    column-gap: 50%;
+
+}
+.carousel-caption{
+    background-color: $color-primario;
+}
