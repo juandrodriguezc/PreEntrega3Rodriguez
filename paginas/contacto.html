@@ -14,29 +14,23 @@
 </head>
 <body>
     <header>
-      
-        <nav id="barra-navegacion">
-            <ul>
-                <li>
-                    <a href="../index.html"> <img id="logo" src="../Assets/BandF.png" alt="Logo"> </a>
-                </li>
-                <li>
-                    <a href="../index.html">Home</a> 
-                </li>
-                <li>
-                 <a href="#">Contacto</a>
-                </li>
-                <li> 
-                    <a href="./nosotros.html">Nosotros</a> 
-                </li>
-                <li> 
-                    <a href="./productos.html">Productos</a> 
-                </li>
-                <li> 
-                    <a href="./promociones.html">Promociones</a>
-                </li>
-            </ul>
-        </nav>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a href="../index.html"> <img id="logo" src="../Assets/BandF.png" alt="logo"> </a>
+          <a class="navbar-brand" href="../index.html">BNF</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+              <a class="nav-link" href="../paginas/productos.html">Productos</a>
+              <a class="nav-link" href="../paginas/promociones.html">Promociones</a>
+              <a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
         
         <h1>Contacto</h1>
@@ -46,21 +40,21 @@
             <form class="row g-3 needs-validation" novalidate>
                 <div class="col-md-4">
                   <label for="validationCustom01" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="validationCustom01" value="Juan" required>
+                  <input type="text" class="form-control" id="validationCustom01" placeholder="Juan" required>
                   <div class="valid-feedback">
                     Suena bien!
                   </div>
                 </div>
                 <div class="col-md-4">
                   <label for="validationCustom02" class="form-label">Apellido</label>
-                  <input type="text" class="form-control" id="validationCustom02" value="Rodriguez" required>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="Rodriguez" required>
                   <div class="valid-feedback">
                     Suena bien!
                   </div>
                 </div>
                 <div class="col-md-6">
                   <label for="validationCustom03" class="form-label">Ciudad</label>
-                  <input type="text" class="form-control" id="validationCustom03" required>
+                  <input type="text" class="form-control" id="validationCustom03" placeholder="Montevideo">
                   <div class="invalid-feedback">
                     Por favor elige una ciudad valida.
                   </div>
@@ -81,6 +75,7 @@
                 </div>
               </form>
         </main>
+
         <footer class="footer"> 
             <p class="text">Nuestras redes</p>
         

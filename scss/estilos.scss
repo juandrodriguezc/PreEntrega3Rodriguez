@@ -1,20 +1,21 @@
 //variables//
-$color-primario:  #CB3C3C;
-$color-secundario: white;
-$color-terciario: #000000;
-$font-titulos:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-$font-secundario:  Arial, Helvetica, sans-serif;
+@import '../scss/colores.scss';
+@import '../scss/fuentes.scss';
+
 *{
     margin: 0;
     padding: 0;
     background-color:  #ffffff;
 
 }
-a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    text-transform: none;
-    transition: 0.25s ease;
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-terciario;
+    background-color: $color-primario;
+    font-family: $font-titulos;
+    font-size: 30px ;
 }
 
 ul{
@@ -60,20 +61,6 @@ form textarea {
     width: 100%;
 }
 
-#barra-navegacion {
-    width: 100%;
-    margin-top: 20px;
-    padding-top: 20px;
-    display: flex;
-    justify-content:space-around;
-}
-
-#barra-navegacion a{ 
-    width: 100%;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 li{
     padding:20px;
 
@@ -116,25 +103,6 @@ h1{
     font-size: 50px;
 }
 
-.barra-carrusel{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.barra-carrusel p{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    text-transform: none;
-    transition: 0.25s ease;
-    font-size: 25px;
-    font-family: $font-secundario;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .img1 {
     width: 255px;
     height: 461px;
@@ -148,6 +116,11 @@ h1{
     height: 461px;
 }
 
+.img4 {
+    width: 255;
+    height: 461;
+}
+
 
 .texts{
 width: 255px;
@@ -158,7 +131,7 @@ align-items: center;
 font-family: $font-titulos;
 font-size: 50px;
 }
-:is(header, footer, .text) {
+:is(footer, .text) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,18 +142,12 @@ font-size: 50px;
     font-family: $font-titulos;
 
 }
-@media (max-width: 400px) {
-    div{
-        display: flex;
-        flex-direction: column;
-    }
-}
 p{
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: $font-secundario;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -208,6 +175,7 @@ p{
     font-weight: bold;
 }
 ul{
+
     li{
         color: $color-terciario ;
         &:hover{
@@ -235,10 +203,21 @@ h2 {
     width: 100%;
     color:$color-terciario;
     background-color: #f3dbdb;
-    display: grid;
-    column-gap: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-titulos;
+    font-size: 35px;
 
 }
+.carousel-indicators{
+    background-color: $color-primario;
+}
+
 .carousel-caption{
     background-color: $color-primario;
+}
+
+.navbar-nav{
+    color:$color-primario;
 }
