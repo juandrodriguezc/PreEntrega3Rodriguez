@@ -198,16 +198,17 @@ h3{
     display: flex;
     justify-content: center;
     font-family: $font-secundario;
+    text-decoration: underline;
+    text-decoration-color: $color-primario;
 }
 h2 {
     width: 100%;
     color:$color-terciario;
-    background-color: #f3dbdb;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items:center;
     font-family: $font-titulos;
-    font-size: 35px;
+    font-size: 22px;
 
 }
 .carousel-indicators{
@@ -221,3 +222,21 @@ h2 {
 .navbar-nav{
     color:$color-primario;
 }
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.img5{
+    width: 200px;
+    height: 200px;
+}
+
+// .container{
+//     max-width: 800px;
+//     margin: 2rem auto;
+//     padding: 2rem;
+//     background-color: $color-secundario;
+//     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+// }
