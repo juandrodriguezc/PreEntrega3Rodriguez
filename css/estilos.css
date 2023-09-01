@@ -84,6 +84,8 @@ li {
 }
 
 .social-link a {
+  margin: 10px;
+  text-decoration: none;
   background-color: #CB3C3C;
   color: #131212;
 }
@@ -104,11 +106,20 @@ h1 {
 .img1 {
   width: 255px;
   height: 461px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img4 {
-  width: 255;
-  height: 461;
+  width: 100%;
+  height: 500px;
+}
+
+.tex {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #CB3C3C;
 }
 
 .texts {
@@ -122,6 +133,7 @@ h1 {
 }
 
 :is(footer, .text) {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,8 +163,8 @@ p {
 }
 
 .img2 {
-  width: 555px;
-  height: 248px;
+  width: 100%;
+  height: 380px;
 }
 
 .textt {
@@ -166,6 +178,17 @@ p {
   font-weight: bold;
 }
 
+.delivery {
+  width: 100%;
+  border-bottom: solid #000000 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  width: 100%;
+}
 ul li {
   color: #000000;
 }
@@ -180,6 +203,7 @@ ul li:hover p {
 }
 
 h3 {
+  margin-top: 30px;
   width: 100%;
   background-color: white;
   color: #000000;
