@@ -96,13 +96,14 @@ h1{
     margin:20px 0 20px 0;
     padding: auto;
     color:$color-primario;
-    background-color: $color-secundario;
+    background-color: transparent;
     display:  flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     font-family: $font-titulos;
     font-size: 50px;
+    font-weight: bold;
 }
 
 .img1 {
@@ -119,9 +120,10 @@ h1{
 }
 
 .tex{
-    font-size: 40px;
+    font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     color: $color-primario;
+    text-transform: uppercase;
 }
 
 
@@ -195,7 +197,7 @@ ul{
         p{
             color: $color-secundario;
             border: 10px solid $color-primario;
-            border-radius: 20px 20px 20px 20px;
+            border-radius: 20px;
             background-color: $color-primario;
         }
     }
@@ -216,7 +218,8 @@ h3{
 }
 h2 {
     width: 100%;
-    color:$color-terciario;
+    color: white;
+    background-color: transparent;
     display: flex;
     justify-content: space-around;
     align-items:center;
@@ -245,4 +248,61 @@ h2 {
 .img5{
     width: 200px;
     height: 200px;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/front-view-professional-kitchen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(60%);
+}
+.hero-content{
+    position: relative;
+    font-family: $font-titulos;
+    color: $color-terciario;
+    text-align: center;
+    margin: 0.625rem;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.hero-title{
+    font-size: $font-secundario;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+
+.hero-button button{
+    background-color: $color-primario;
+    color: $color-secundario;
+    border: 1px solid $color-terciario;
+    border-radius: 20px;
+    margin-top: 5rem;
+    padding: 0.9375rem 1.875rem;
+    font-family: $font-secundario;
+    font-size: 1.125rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    background-color: #c92f2f;
+    border: 1px solid #a35370;
 }
