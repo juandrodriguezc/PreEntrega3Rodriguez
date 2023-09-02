@@ -163,7 +163,7 @@ p {
   height: 380px;
 }
 
-.textt {
+:is(.textt, .tex-index, .textt-index) {
   margin: 10px;
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
@@ -317,22 +317,16 @@ h2 {
 a {
   text-decoration: none;
 }
-a .textt {
-  color: #000000;
-}
-a .textt:hover {
-  color: #CB3C3C;
-}
-
 a p {
   color: #000000;
 }
 
-a .textt {
-  color: #000000;
+a .textt-index:hover {
+  color: #CB3C3C;
 }
-a .textt:hover {
-  color: white;
+
+a .texts:hover {
+  color: #CB3C3C;
 }
 
 /*# sourceMappingURL=estilos.css.map */
