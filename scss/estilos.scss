@@ -28,7 +28,6 @@ ul{
 
 ul:hover a:hover {
     color: $color-primario;
-    box-shadow: 0 2px 0 0 currentColor;
 }
 
 .text {
@@ -47,11 +46,10 @@ ul:hover a:hover {
 }
 
 form {
-    background-color: navy;
     width: 100%;
     height: 100vh;
-    color: black;
-    padding: 30px;
+    color: rgb(209, 80, 80);
+    padding: 10px;
 }
 form input {
     width: 100%;
@@ -59,11 +57,6 @@ form input {
 
 form textarea { 
     width: 100%;
-}
-
-li{
-    padding:20px;
-
 }
 
 #logo {
@@ -179,6 +172,7 @@ p{
     align-items: center;
     font-size: 32px;
     font-weight: bold;
+    text-decoration: none;
 }
 .delivery{
     width: 100%;
@@ -305,4 +299,40 @@ h2 {
 .hero-button:hover {
     background-color: #c92f2f;
     border: 1px solid #a35370;
+}
+
+.tex-index{
+    color: $color-terciario;
+    font-family: $font-titulos;
+    font-size: 30px;
+    width: 100%;
+    padding: 20px;
+    text-decoration: underline;
+    text-decoration-color: $color-primario;
+
+}
+
+a {
+    text-decoration: none;
+    .textt{
+        color: $color-terciario;
+        &:hover{
+            color: $color-primario;
+        }
+    }
+}
+
+a{
+    p{
+        color: $color-terciario;
+    }
+}
+
+a{
+    .textt{
+        color: $color-terciario;
+        &:hover{
+            color: $color-secundario;
+        }
+    }
 }
