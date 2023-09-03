@@ -1,21 +1,27 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: white;
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #000000;
   background-color: #CB3C3C;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 30px;
 }
 
-ul {
+:is(ul, .text, form, form input, .text, .social-link, h1, .img4, .img2, .delivery, h3, h2, .hero, .tex-index) {
   width: 100%;
+}
+
+:is(header, .social-link, h1, .img1, .texts, .text, footer, p, .delivery, h3, .hero, .textt, .tex-index, .textt-index) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
   display: flex;
   justify-content: space-around;
   flex-wrap: nowrap;
@@ -27,13 +33,7 @@ ul:hover a:hover {
 }
 
 .text {
-  color: rgb(15, 15, 15);
-  width: 100%;
-  margin: auto;
-  padding: auto;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  color: #000000;
 }
 
 .boton {
@@ -42,18 +42,9 @@ ul:hover a:hover {
 }
 
 form {
-  width: 100%;
   height: 100vh;
   color: rgb(209, 80, 80);
   padding: 10px;
-}
-
-form input {
-  width: 100%;
-}
-
-form textarea {
-  width: 100%;
 }
 
 #logo {
@@ -63,16 +54,8 @@ form textarea {
   justify-content: flex-start;
 }
 
-.text {
-  width: 100%;
-}
-
 .social-link {
-  width: 100%;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
   background-color: #CB3C3C;
 }
@@ -89,10 +72,6 @@ h1 {
   padding: auto;
   color: #CB3C3C;
   background-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 50px;
   font-weight: bold;
@@ -101,13 +80,9 @@ h1 {
 .img1 {
   width: 255px;
   height: 461px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .img4 {
-  width: 100%;
   height: 500px;
 }
 
@@ -119,20 +94,13 @@ h1 {
 }
 
 .texts {
-  width: 255px;
-  height: 461px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 50px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 50px;
 }
 
 :is(footer, .text) {
   margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   background-color: #CB3C3C;
   color: black;
@@ -141,9 +109,6 @@ h1 {
 }
 
 p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bold;
@@ -159,28 +124,11 @@ p {
 }
 
 .img2 {
-  width: 100%;
   height: 380px;
 }
 
-:is(.textt, .tex-index, .textt-index) {
-  margin: 10px;
-  padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 32px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
 .delivery {
-  width: 100%;
   border-bottom: solid #000000 1px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 ul {
@@ -201,20 +149,16 @@ ul li:hover p {
 
 h3 {
   margin-top: 30px;
-  width: 100%;
   background-color: white;
   color: #000000;
   padding: 10px;
-  display: flex;
-  justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: underline;
   text-decoration-color: #CB3C3C;
 }
 
 h2 {
-  width: 100%;
-  color: white;
+  color: rgb(22, 21, 21);
   background-color: transparent;
   display: flex;
   justify-content: space-around;
@@ -231,10 +175,6 @@ h2 {
   background-color: #CB3C3C;
 }
 
-.navbar-nav {
-  color: #CB3C3C;
-}
-
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -248,11 +188,7 @@ h2 {
 
 .hero {
   position: relative;
-  width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .hero::before {
@@ -304,11 +240,18 @@ h2 {
   border: 1px solid #a35370;
 }
 
+:is(.textt, .tex-index, .textt-index) {
+  margin: 10px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .tex-index {
   color: #000000;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 30px;
-  width: 100%;
   padding: 20px;
   text-decoration: underline;
   text-decoration-color: #CB3C3C;
@@ -327,6 +270,10 @@ a .textt-index:hover {
 
 a .texts:hover {
   color: #CB3C3C;
+}
+
+.hero-subtitle {
+  color: white;
 }
 
 /*# sourceMappingURL=estilos.css.map */

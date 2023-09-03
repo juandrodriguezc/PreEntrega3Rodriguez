@@ -5,21 +5,28 @@
 *{
     margin: 0;
     padding: 0;
-    background-color:  #ffffff;
+    background-color: $color-secundario;
 
 }
 header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: $color-terciario;
     background-color: $color-primario;
     font-family: $font-titulos;
     font-size: 30px ;
 }
 
+:is(ul, .text, form, form input, .text, .social-link, h1, .img4, .img2, .delivery, h3, h2, .hero, .tex-index){
+    width: 100%;
+}
+
+:is(header, .social-link, h1, .img1, .texts, .text, footer, p, .delivery, h3, .hero, .textt, .tex-index, .textt-index) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 ul{
-    width:100%;
     display:flex;
     justify-content: space-around;
     flex-wrap: nowrap;
@@ -31,13 +38,7 @@ ul:hover a:hover {
 }
 
 .text {
-    color:rgb(15, 15, 15);
-    width: 100%;
-    margin: auto;
-    padding: auto;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    color:$color-terciario;
 }
 
 .boton {
@@ -45,19 +46,14 @@ ul:hover a:hover {
     background-color: rgb(1, 1, 1);
 }
 
+
+
 form {
-    width: 100%;
     height: 100vh;
     color: rgb(209, 80, 80);
     padding: 10px;
 }
-form input {
-    width: 100%;
-}
 
-form textarea { 
-    width: 100%;
-}
 
 #logo {
     width:50%;
@@ -66,15 +62,8 @@ form textarea {
     justify-content: flex-start;
 }
 
-.text {
-    width: 100%;
-}
 .social-link {
-    width: 100%;
     text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
     background-color:$color-primario;
 }
@@ -90,10 +79,6 @@ h1{
     padding: auto;
     color:$color-primario;
     background-color: transparent;
-    display:  flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
     font-family: $font-titulos;
     font-size: 50px;
     font-weight: bold;
@@ -102,13 +87,9 @@ h1{
 .img1 {
     width: 255px;
     height: 461px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .img4 {
-    width: 100%;
     height: 500px;
 }
 
@@ -121,19 +102,12 @@ h1{
 
 
 .texts{
-width: 255px;
-height: 461px;
-display: flex;
-justify-content: center;
-align-items: center;
+padding: 50px;
 font-family: $font-titulos;
 font-size: 50px;
 }
 :is(footer, .text) {
     margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     background-color: $color-primario;
     color:black;
@@ -142,9 +116,6 @@ font-size: 50px;
 
 }
 p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: $font-secundario;
     font-size: 20px;
     font-weight: bold;
@@ -160,26 +131,11 @@ p{
 }
 
 .img2{
-    width: 100%;
     height: 380px;
 }
-:is(.textt, .tex-index, .textt-index){
-    margin: 10px;
-    padding: 10px;
-    font-family: $font-secundario;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 32px;
-    font-weight: bold;
-    text-decoration: none;
-}
+
 .delivery{
-    width: 100%;
     border-bottom: solid $color-terciario 1px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 ul{
     width: 100%;
@@ -200,19 +156,15 @@ ul{
 
 h3{
     margin-top: 30px;
-    width: 100%;
     background-color: $color-secundario;
     color: $color-terciario;
     padding: 10px;
-    display: flex;
-    justify-content: center;
     font-family: $font-secundario;
     text-decoration: underline;
     text-decoration-color: $color-primario;
 }
 h2 {
-    width: 100%;
-    color: white;
+    color: rgb(22, 21, 21);
     background-color: transparent;
     display: flex;
     justify-content: space-around;
@@ -229,9 +181,6 @@ h2 {
     background-color: $color-primario;
 }
 
-.navbar-nav{
-    color:$color-primario;
-}
 
 .container{
     display:  grid;
@@ -246,11 +195,7 @@ h2 {
 
 .hero{
     position: relative;
-    width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .hero::before {
@@ -301,11 +246,18 @@ h2 {
     border: 1px solid #a35370;
 }
 
+:is(.textt, .tex-index, .textt-index){
+    margin: 10px;
+    padding: 10px;
+    font-family: $font-secundario;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .tex-index{
     color: $color-terciario;
     font-family: $font-titulos;
-    font-size: 30px;
-    width: 100%;
     padding: 20px;
     text-decoration: underline;
     text-decoration-color: $color-primario;
@@ -335,4 +287,8 @@ a{
             color: $color-primario;
         }
     }
+}
+
+.hero-subtitle{
+    color: $color-secundario;
 }
