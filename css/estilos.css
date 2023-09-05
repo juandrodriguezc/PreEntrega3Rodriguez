@@ -11,10 +11,12 @@ header {
   font-size: 30px;
 }
 
+/*width 100%*/
 :is(ul, .text, form, form input, .text, .social-link, h1, .img4, .img2, .delivery, h3, h2, .hero, .tex-index) {
   width: 100%;
 }
 
+/*Display FLex - Center*/
 :is(header, .social-link, h1, .img1, .texts, .text, footer, p, .delivery, h3, .hero, .textt, .tex-index, .textt-index) {
   display: flex;
   justify-content: center;
