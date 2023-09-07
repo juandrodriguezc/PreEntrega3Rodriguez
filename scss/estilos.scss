@@ -8,6 +8,7 @@
     background-color: $color-secundario;
 
 }
+/*header*/
 header{
     color: $color-terciario;
     background-color: $color-primario;
@@ -25,7 +26,23 @@ header{
     align-items: center;
 }
 
+:is(.textt, .tex-index, .textt-index){
+    margin: 10px;
+    padding: 10px;
+    font-family: $font-secundario;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+:is(footer, .text) {
+    margin-top: 10px;
+    flex-direction: column;
+    background-color: $color-primario;
+    color:black;
+    font-size: 30px;
+    font-family: $font-titulos;
 
+}
 ul{
     display:flex;
     justify-content: space-around;
@@ -62,17 +79,6 @@ form {
     justify-content: flex-start;
 }
 
-.social-link {
-    text-decoration: none;
-    flex-direction: row;
-    background-color:$color-primario;
-}
-.social-link a {
-    margin: 10px;
-    text-decoration: none;
-    background-color:$color-primario;
-    color: #131212;
-}
 
 h1{
     margin:20px 0 20px 0;
@@ -102,18 +108,9 @@ h1{
 
 
 .texts{
-padding: 50px;
-font-family: $font-titulos;
-font-size: 50px;
-}
-:is(footer, .text) {
-    margin-top: 10px;
-    flex-direction: column;
-    background-color: $color-primario;
-    color:black;
-    font-size: 30px;
+    padding: 50px;
     font-family: $font-titulos;
-
+    font-size: 50px;
 }
 p{
     font-family: $font-secundario;
@@ -139,7 +136,7 @@ p{
 }
 ul{
     width: 100%;
-
+    
     li{
         color: $color-terciario ;
         &:hover{
@@ -171,7 +168,7 @@ h2 {
     align-items:center;
     font-family: $font-titulos;
     font-size: 22px;
-
+    
 }
 .carousel-indicators{
     background-color: $color-primario;
@@ -186,7 +183,7 @@ h2 {
     display:  grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-
+    
 }
 .img5{
     width: 200px;
@@ -246,14 +243,6 @@ h2 {
     border: 1px solid #a35370;
 }
 
-:is(.textt, .tex-index, .textt-index){
-    margin: 10px;
-    padding: 10px;
-    font-family: $font-secundario;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-}
 
 .tex-index{
     color: $color-terciario;
@@ -261,7 +250,7 @@ h2 {
     padding: 20px;
     text-decoration: underline;
     text-decoration-color: $color-primario;
-
+    
 }
 
 a{
@@ -283,7 +272,7 @@ a{
 a{
     .texts{
         &:hover{
-
+            
             color: $color-primario;
         }
     }
@@ -291,4 +280,16 @@ a{
 
 .hero-subtitle{
     color: $color-secundario;
+}
+
+.social-link {
+    text-decoration: none;
+    flex-direction: row;
+    background-color:$color-primario;
+}
+.social-link a {
+    margin: 10px;
+    text-decoration: none;
+    background-color:$color-primario;
+    color: #131212;
 }
