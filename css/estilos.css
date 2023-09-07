@@ -4,6 +4,7 @@
   background-color: white;
 }
 
+/*header*/
 header {
   color: #000000;
   background-color: #CB3C3C;
@@ -21,6 +22,24 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+:is(.textt, .tex-index, .textt-index) {
+  margin: 10px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+:is(footer, .text) {
+  margin-top: 10px;
+  flex-direction: column;
+  background-color: #CB3C3C;
+  color: black;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 ul {
@@ -56,19 +75,6 @@ form {
   justify-content: flex-start;
 }
 
-.social-link {
-  text-decoration: none;
-  flex-direction: row;
-  background-color: #CB3C3C;
-}
-
-.social-link a {
-  margin: 10px;
-  text-decoration: none;
-  background-color: #CB3C3C;
-  color: #131212;
-}
-
 h1 {
   margin: 20px 0 20px 0;
   padding: auto;
@@ -99,15 +105,6 @@ h1 {
   padding: 50px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 50px;
-}
-
-:is(footer, .text) {
-  margin-top: 10px;
-  flex-direction: column;
-  background-color: #CB3C3C;
-  color: black;
-  font-size: 30px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 p {
@@ -242,15 +239,6 @@ h2 {
   border: 1px solid #a35370;
 }
 
-:is(.textt, .tex-index, .textt-index) {
-  margin: 10px;
-  padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
 .tex-index {
   color: #000000;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -276,6 +264,19 @@ a .texts:hover {
 
 .hero-subtitle {
   color: white;
+}
+
+.social-link {
+  text-decoration: none;
+  flex-direction: row;
+  background-color: #CB3C3C;
+}
+
+.social-link a {
+  margin: 10px;
+  text-decoration: none;
+  background-color: #CB3C3C;
+  color: #131212;
 }
 
 /*# sourceMappingURL=estilos.css.map */
